@@ -1,7 +1,8 @@
 def count_e(word)
   i = c = 0
   while i < word.length
-    if word[i] == 'e'
+    ch = word[i]
+    if ch == 'e' or ch == 'E'
       c += 1
     end
     i += 1
@@ -10,4 +11,4 @@ def count_e(word)
 end
 
 puts "Number of (e)s in 'movie' is " + count_e("movie").to_s # => 1
-puts "Number of (e)s in 'excellent' is " + count_e("excellent").to_s # => 3
+puts "Number of (e)s in 'excellent' is " + count_e("Excellent").to_s # => 3
